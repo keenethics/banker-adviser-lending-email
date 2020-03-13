@@ -62,7 +62,7 @@
 }
 
 #about {
-  background-color: rgba(229, 229, 299, .12)
+  background-color: rgba(229, 229, 299, 0.12);
 }
 
 #about .about-wrap {
@@ -133,7 +133,7 @@
 }
 
 .meet-banks h2,
-p {
+.meet-banks p {
   color: #01216b;
 }
 
@@ -187,4 +187,52 @@ p {
 
 .get-list input::placeholder {
   color: #01216b;
+}
+
+#banker-offer {
+  margin-top: 90px;
+}
+
+.banker-offer-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  color: #01216b;
+  text-align: center;
+}
+
+#banker-offer .offers {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 90px 0;
+}
+
+.offer-item {
+  flex: 0 0 25%;
+  background: #f8f9fe;
+  border: 1px solid #dce4f7;
+  padding: 40px 50px 90px 33px;
+}
+
+.offer-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.offer-item-logo {
+  margin-bottom: 19px;
+}
+
+.offer-item-title h3 {
+  font-weight: bold;
+  color: #01216B;
+  margin-bottom: 25px;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.offer-item-text p {
+  line-height: 28px;
+  font-weight: normal;
+  font-size: 18px;
 }
