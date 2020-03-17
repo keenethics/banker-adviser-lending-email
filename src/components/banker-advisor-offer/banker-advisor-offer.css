@@ -1,0 +1,53 @@
+#banker-offer {
+  margin-top: 90px;
+}
+
+.banker-offer-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  color: #01216b;
+  text-align: center;
+}
+
+#banker-offer .offers {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 90px 0;
+  padding: 0 10%;
+}
+
+.offer-item {
+  flex: 0 0 33%;
+  background: #f8f9fe;
+  border: 1px solid #dce4f7;
+  padding: 3% 7% 8% 3%;
+}
+
+.offer-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.offer-item-logo {
+  margin-bottom: 19px;
+}
+
+.offer-item-title h3 {
+  font-weight: bold;
+  max-width: 270px;
+  color: #01216B;
+  margin-bottom: 25px;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.offer-item-text {
+  max-width: 270px;
+}
+
+.offer-item-text p {
+  line-height: 28px;
+  font-weight: normal;
+  font-size: 18px;
+}

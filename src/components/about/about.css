@@ -1,0 +1,109 @@
+#about {
+  background-color: rgba(229, 229, 299, 0.12);
+}
+
+#about .about-wrap {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-logo {
+  position: relative;
+}
+
+.about-logo img {
+  border-radius: 50%;
+}
+
+.about-logo::before {
+  content: "";
+  height: 5px;
+  background-image: url("./Vector.svg");
+  position: absolute;
+  width: 100px;
+  height: 67.33px;
+  left: -76%;
+}
+
+.about-name h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 54px;
+  color: #01216b;
+  margin-top: 19px;
+}
+
+.about-partner {
+  font-size: 18px;
+  line-height: 24px;
+  color: #01216b;
+  max-width: 250px;
+  width: 100%;
+}
+
+.about-text {
+  margin: 39px 0 0 150px;
+}
+
+.about-text p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  width: 350px;
+  color: #081e31;
+  padding-bottom: 27px;
+}
+
+.meet-banks-wrap,
+.get-list-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.get-list-wrap {
+  padding: 40px 0 50px 0;
+}
+
+.meet-banks {
+  margin-top: 120px;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.meet-banks h2,
+.meet-banks p {
+  color: #01216b;
+}
+
+.meet-banks h2 {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+}
+
+.meet-banks p {
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+color: #01216B;
+margin-top: 10px;
+}
+
+.get-list {
+  max-width: 600px;
+  display: flex;
+  width: 100%;
+}
+
+.get-list input {
+  box-shadow: 0px 4px 4px #eef1ff;
+  max-width: 450px;
+  width: 100%;
+}
+
+.get-list button {
+  margin-left: -70px;
+}

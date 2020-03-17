@@ -1,0 +1,124 @@
+.banks-wrap h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  color: #01216b;
+  margin: 85px 0 35px 0;
+}
+
+.bank {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+.bank:last-child {
+  margin-bottom: 85px;
+}
+
+.bank-logo {
+  padding: 26px 19px 22px 29px;
+  background: #ffffff;
+  border: 2px solid #dce4f6;
+}
+
+.bank-description {
+  padding: 25px;
+  background: #f8f9fe;
+  border: 1px solid #dce4f6;
+  margin-left: 20px;
+  max-width: 830px;
+  width: 100%;
+}
+
+.bank-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.bank-name h4 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #081e31;
+}
+
+.bank-name div {
+  background: #0039a6;
+  border-radius: 2px;
+  padding: 3px 7px;
+  height: min-content;
+}
+
+.bank-name a {
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.bank-industry div {
+  display: flex;
+  margin-bottom: 12px;
+  max-width: 310px;
+  justify-content: space-between;
+}
+
+.bank-industry div > p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #0039a6;
+}
+
+.bank-industry p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #081e31;
+  max-width: 520px;
+}
+.bank-industry p small {
+  color: #0039a6;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.border-bottom {
+  border: 1px solid #0039a6;
+  margin-top: 19px;
+}
+
+.connect-person {
+  margin-top: 15px;
+}
+
+.connect-person-item {
+  display: flex;
+  width: 80%;
+  margin-bottom: 13px;
+  justify-content: space-between;
+}
+.connect-person-item p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #081e31;
+}
+
+.connect-person-item p:nth-child(2) {
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #081e31;
+}
+
+.connect-person-item p:last-child {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #0039a6;
+}
