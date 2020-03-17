@@ -36,13 +36,17 @@ const Banks = () => {
               <div className="border-bottom"></div>
               <div className="connect-person">
                 <div className="connect-person-item">
-                  <p>Marvin Hogan</p>
-                  <p>mhogan@morganchase.com</p>
+                  <div className="connect-name-email">
+                    <p>Marvin Hogan</p>
+                    <p>mhogan@morganchase.com</p>
+                  </div>
                   <p>connect</p>
                 </div>
                 <div className="connect-person-item">
-                  <p>Marvin Hogan</p>
-                  <p>mhogan@morganchase.com</p>
+                  <div className="connect-name-email">
+                    <p>Marvin Hogan</p>
+                    <p>mhogan@morganchase.com</p>
+                  </div>
                   <p>connect</p>
                 </div>
               </div>
@@ -73,13 +77,17 @@ const Banks = () => {
               <div className="border-bottom"></div>
               <div className="connect-person">
                 <div className="connect-person-item">
-                  <p>Marvin Hogan</p>
-                  <p>mhogan@morganchase.com</p>
+                  <div className="connect-name-email">
+                    <p>Marvin Hogan</p>
+                    <p>mhogan@morganchase.com</p>
+                  </div>
                   <p>connect</p>
                 </div>
                 <div className="connect-person-item">
-                  <p>Marvin Hogan</p>
-                  <p>mhogan@morganchase.com</p>
+                  <div className="connect-name-email">
+                    <p>Marvin Hogan</p>
+                    <p>mhogan@morganchase.com</p>
+                  </div>
                   <p>connect</p>
                 </div>
               </div>
@@ -110,13 +118,17 @@ const Banks = () => {
               <div className="border-bottom"></div>
               <div className="connect-person">
                 <div className="connect-person-item">
-                  <p>Marvin Hogan</p>
-                  <p>mhogan@morganchase.com</p>
+                  <div className="connect-name-email">
+                    <p>Marvin Hogan</p>
+                    <p>mhogan@morganchase.com</p>
+                  </div>
                   <p>connect</p>
                 </div>
                 <div className="connect-person-item">
-                  <p>Marvin Hogan</p>
-                  <p>mhogan@morganchase.com</p>
+                  <div className="connect-name-email">
+                    <p>Marvin Hogan</p>
+                    <p>mhogan@morganchase.com</p>
+                  </div>
                   <p>connect</p>
                 </div>
               </div>

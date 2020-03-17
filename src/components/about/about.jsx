@@ -7,19 +7,19 @@ const About = () => {
   return (
     <section id="about">
       <div class="about-wrap">
-        <div class="about-description">
+      <div class="about-description">
           <div class="about-logo">
             <img src={person} alt="Mike Casey" />
           </div>
-          <div class="about-name">
-            <h2>Mike Casey</h2>
-          </div>
-          {/* <div class="about-partner"> */}
+          <div class="about-partner-wrap">
+            <div class="about-name">
+              <h2>Mike Casey</h2>
+            </div>
             <p className="about-partner">
               Partner, Executive Committee <br />
               Member TechCXO
             </p>
-          {/* </div> */}
+          </div>
         </div>
         <div class="about-text">
           <p>
@@ -39,7 +39,7 @@ const About = () => {
       <div class="meet-banks-wrap">
         <div class="meet-banks">
           <h2>
-            Meet the Top 300 Investment Banks and <br />
+            Meet the Top 300 Investment Banks and
             M&A Advisors in NYC!
           </h2>
           <p>Learn how relevant a particular bank is to your needs.</p>

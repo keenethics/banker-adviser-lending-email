@@ -98,27 +98,64 @@
   display: flex;
   width: 80%;
   margin-bottom: 13px;
+  align-items: center;
   justify-content: space-between;
 }
-.connect-person-item p:first-child {
+
+.connect-person-item .connect-name-email p:first-child {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #081e31;
 }
-
-.connect-person-item p:nth-child(2) {
+.connect-person-item .connect-name-email p:last-child {
   font-size: 18px;
   line-height: 22px;
   text-decoration-line: underline;
   color: #081e31;
 }
 
-.connect-person-item p:last-child {
+.connect-name-email {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.connect-person-item > p {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #0039a6;
+}
+
+@media (min-width: 570px) and (max-width: 920px) {
+  .connect-person-item {
+    width: 100%;
+  }
+
+  .banks-wrap {
+    padding: 0 20px;
+  }
+
+  .connect-person-item {
+    display: flex;
+    width: 80%;
+    margin-bottom: 13px;
+    justify-content: space-between;
+  }
+
+  .connect-name-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bank-industry p small {
+    margin-left: 20px;
+  }
+  .bank-logo img {
+    width: 165px;
+    height: 165px;
+  }
 }

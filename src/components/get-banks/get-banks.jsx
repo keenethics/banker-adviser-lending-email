@@ -13,7 +13,7 @@ const GetBanks = () => {
           </div>
           <div className="share-banks">
             <p>
-              Share your email to <b> get the database </b> of the
+              Share your email to <b> get the database <p>of the</p> </b>
             </p>
             <h3>Top 300 Investment Banks in New York </h3>
             <p>and their decision-makers. </p>

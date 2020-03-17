@@ -46,3 +46,32 @@
   width: 100%;
   height: 100%;
 }
+
+
+@media (min-width: 570px) and (max-width: 920px) {
+  .intro-left-wrap {
+    width: 60%;
+  }
+
+  .intro-left {
+    margin-left: 0;
+    padding-left: 11%;
+  }
+
+  .intro-left header {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .intro-logo img {
+    margin-bottom: 90px;
+  }
+
+  .intro-left h1 {
+    margin-bottom: 40px;
+  }
+
+  .intro-left p {
+    margin-bottom: 80px;
+  }
+}

@@ -1,5 +1,5 @@
 #about {
-  background-color: rgba(229, 229, 299, 0.12);
+  background-color: rgba(229, 229, 299, 0.3);
 }
 
 #about .about-wrap {
@@ -105,5 +105,52 @@ margin-top: 10px;
 }
 
 .get-list button {
-  margin-left: -70px;
+  margin-left: -40px;
+  background-color: #01216B;
+}
+
+
+@media (min-width: 570px) and (max-width: 920px) {
+  #about .about-wrap {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about-text {
+    margin-left: 0;
+  }
+  .about-name h2{
+    margin-top: 32px;
+  }
+  .about-text p {
+    width: 450px;
+    margin-left: 0;
+  }
+  .about-description {
+    display: flex;
+    width: 450px;
+    margin-top: 30px;
+  }
+  .about-logo {
+    width: 180px;
+    height: 180px;
+    margin: 0;
+  }
+  .about-logo img {
+    height: 100%;
+    width: 100%;
+  }
+  .about-logo::before {
+    left: -89%;
+    top: -270px;
+  }
+  .about-partner-wrap {
+    margin-left: 25px;
+  }
+  .meet-banks-with-paypal p {
+    max-width: 420px;
+    margin-right: 20px;
+  }
+  .meet-banks-with-paypal button {
+    padding: 0 17px;
+  }
 }
