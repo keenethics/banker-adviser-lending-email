@@ -28,3 +28,20 @@ footer {
 #footer-content button {
   margin-left: -70px;
 }
+
+@media (max-width: 569px) and (min-width: 375px) {
+  #footer-content {
+    padding: 0 13px;
+  }
+  #footer-content h4 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  #footer-content button {
+    margin: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+}

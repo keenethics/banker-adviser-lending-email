@@ -47,7 +47,6 @@
   height: 100%;
 }
 
-
 @media (min-width: 570px) and (max-width: 920px) {
   .intro-left-wrap {
     width: 60%;
@@ -73,5 +72,27 @@
 
   .intro-left p {
     margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 569px) and (min-width: 375px) {
+  .intro-right {
+    display: none;
+  }
+
+  .intro-left-wrap {
+    width: 100%;
+  }
+
+  .intro-left {
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  .intro-left h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff;
   }
 }

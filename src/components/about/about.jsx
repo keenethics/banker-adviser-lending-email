@@ -2,6 +2,7 @@ import React from "react";
 
 import "./about.css";
 import person from "./Casey.png"
+import svg from "./Vector.svg"
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
               <h2>Mike Casey</h2>
             </div>
             <p className="about-partner">
-              Partner, Executive Committee <br />
+              Partner, Executive Committee
               Member TechCXO
             </p>
           </div>
@@ -34,6 +35,9 @@ const About = () => {
             The list of bankers is provided to you by Mike Casey, an investment
             banker with 30 years of experience.
           </p>
+        </div>
+        <div className="about-svg">
+          <img src={svg} alt="svg logo"/>
         </div>
       </div>
       <div class="meet-banks-wrap">

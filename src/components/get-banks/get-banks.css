@@ -12,7 +12,7 @@
 }
 
 .get-banks-person {
-  background: url('./Fill1.png') no-repeat center center;
+  background: url("./Fill1.png") no-repeat center center;
   background-size: contain;
   display: flex;
   max-width: 500px;
@@ -70,11 +70,10 @@
   width: 100%;
 }
 
-
 @media (min-width: 570px) and (max-width: 920px) {
   .get-banks {
     padding: 0;
-    justify-content: flex-start ;
+    justify-content: flex-start;
   }
   .get-banks-person {
     background: url("./Fill2.png") no-repeat left bottom;
@@ -93,13 +92,13 @@
     margin-left: -20px;
     width: 450px;
   }
-  .share-banks p:first-child  {
+  .share-banks p:first-child {
     margin-bottom: 0 !important;
   }
   .share-banks p {
     margin-bottom: 30px !important;
   }
-  .share-banks p  b {
+  .share-banks p b {
     display: block;
   }
   .share-banks p > b > p {
@@ -108,3 +107,33 @@
   }
 }
 
+@media (max-width: 569px) and (min-width: 375px) {
+  .get-banks {
+    padding: 0 10px;
+  }
+  .get-banks-person {
+    display: none;
+  }
+
+  .share-banks p:first-child {
+    font-size: 18px;
+    display: inline-block;
+  }
+
+  .share-banks h3 {
+    font-size: 40;
+  }
+
+  .share-banks p {
+    font-size: 24px;
+  }
+
+  .share-banks-form {
+    display: block;
+  }
+  .share-banks-form button {
+    margin: 0;
+    width: 100%;
+    margin-top: 15px;
+  }
+}

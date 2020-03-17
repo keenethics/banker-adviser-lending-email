@@ -159,3 +159,125 @@
     height: 165px;
   }
 }
+
+@media (max-width: 569px) and (min-width: 375px) {
+  .banks {
+    display: none;
+  }
+
+  #banks {
+    padding: 0 13px;
+  }
+
+  #banks h3 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 80px 0 30px 0;
+    line-height: 48px;
+    color: #01216b;
+  }
+  .mobile-bank {
+    background: #f8f9fe;
+    border: 1px solid #dce4f6;
+    padding: 13px;
+  }
+
+  #banks .mobile-logo {
+    background: #ffffff;
+    border: 2px solid #dce4f6;
+  }
+
+  .mobile-bank-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-link {
+    background: #0039a6;
+    height: max-content;
+    border-radius: 2px;
+    padding: 5px 10px;
+  }
+  .mobile-link a {
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .mobile-bank-header img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .mobile-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #081e31;
+  }
+
+  .mobile-industry {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0039a6;
+    margin-bottom: 20px;
+  }
+
+  .mobile-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #081e31;
+  }
+
+  #banks small {
+    font-size: 14px;
+    line-height: 17px;
+    color: #0039a6;
+  }
+
+  .border-bottom {
+    border: 1px solid #0039a6;
+  }
+
+  .connect-mail {
+    margin-top: 20px;
+  }
+
+  .connect-mail .connect-name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .connect-name {
+    margin-bottom: 5px;
+  }
+
+  .connect-mail .connect-name h5 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #081e31;
+  }
+
+  .connect-mail .connect-name p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0039a6;
+  }
+
+  .connect-mail p {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #081e31;
+  }
+}
