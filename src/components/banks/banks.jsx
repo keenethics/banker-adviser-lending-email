@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "react-slick";
 
 import "./banks.css";
 import logo1 from "./image10.png";
@@ -6,54 +7,147 @@ import logo2 from "./image11.png";
 import logo3 from "./image12.png";
 
 const Banks = () => {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <section id="banks-section">
       <div className="mobile-title">
         <h3>What Does BankerAdvisor Offer?</h3>
       </div>
       <div className="mobile-bank-wrap">
-        <div className="mobile-bank">
-          <div className="mobile-bank-header">
-            <div className="mobile-logo">
-              <img src={logo1} alt="" />
+        <Slider {...settings}>
+          <div className="mobile-bank">
+            <div className="mobile-bank-header">
+              <div className="mobile-logo">
+                <img src={logo1} alt="" />
+              </div>
+              <div className="mobile-link">
+                <a href="jpmorganchase.com">jpmorganchase.com</a>
+              </div>
             </div>
-            <div className="mobile-link">
-              <a href="jpmorganchase.com">jpmorganchase.com</a>
+            <div className="mobile-title">
+              <h4>JP Morgan Chase</h4>
             </div>
-          </div>
-          <div className="mobile-title">
-            <h4>JP Morgan Chase</h4>
-          </div>
-          <div className="mobile-industry">
-            <p>Industry</p>
-            <p>Bank size</p>
-          </div>
-          <div className="mobile-text">
-            <p>
-              JPMorgan Chase (NYSE: JPM) is one of the oldest financial
-              institutions in the United States. With a history dating back
-              over...
-            </p>
-          </div>
-          <small>Read more</small>
+            <div className="mobile-industry">
+              <p>Industry</p>
+              <p>Bank size</p>
+            </div>
+            <div className="mobile-text">
+              <p>
+                JPMorgan Chase (NYSE: JPM) is one of the oldest financial
+                institutions in the United States. With a history dating back
+                over...
+              </p>
+            </div>
+            <small>Read more</small>
 
-          <div className="border-bottom"></div>
+            <div className="border-bottom"></div>
 
-          <div className="connect-mail">
-            <div className="connect-name">
-              <h5>Marvin Hogan</h5>
-              <p>connect</p>
+            <div className="connect-mail">
+              <div className="connect-name">
+                <h5>Marvin Hogan</h5>
+                <p>connect</p>
+              </div>
+              <p>mhogan@morganchase.com</p>
             </div>
-            <p>mhogan@morganchase.com</p>
-          </div>
-          <div className="connect-mail">
-            <div className="connect-name">
-              <h5>Casey Thompson</h5>
-              <p>connect</p>
+            <div className="connect-mail">
+              <div className="connect-name">
+                <h5>Casey Thompson</h5>
+                <p>connect</p>
+              </div>
+              <p>cthompson@morganchase.com</p>
             </div>
-            <p>cthompson@morganchase.com</p>
           </div>
-        </div>
+          <div className="mobile-bank">
+            <div className="mobile-bank-header">
+              <div className="mobile-logo">
+                <img src={logo1} alt="" />
+              </div>
+              <div className="mobile-link">
+                <a href="jpmorganchase.com">jpmorganchase.com</a>
+              </div>
+            </div>
+            <div className="mobile-title">
+              <h4>JP Morgan Chase</h4>
+            </div>
+            <div className="mobile-industry">
+              <p>Industry</p>
+              <p>Bank size</p>
+            </div>
+            <div className="mobile-text">
+              <p>
+                JPMorgan Chase (NYSE: JPM) is one of the oldest financial
+                institutions in the United States. With a history dating back
+                over...
+              </p>
+            </div>
+            <small>Read more</small>
+
+            <div className="border-bottom"></div>
+
+            <div className="connect-mail">
+              <div className="connect-name">
+                <h5>Marvin Hogan</h5>
+                <p>connect</p>
+              </div>
+              <p>mhogan@morganchase.com</p>
+            </div>
+            <div className="connect-mail">
+              <div className="connect-name">
+                <h5>Casey Thompson</h5>
+                <p>connect</p>
+              </div>
+              <p>cthompson@morganchase.com</p>
+            </div>
+          </div>
+          <div className="mobile-bank">
+            <div className="mobile-bank-header">
+              <div className="mobile-logo">
+                <img src={logo1} alt="" />
+              </div>
+              <div className="mobile-link">
+                <a href="jpmorganchase.com">jpmorganchase.com</a>
+              </div>
+            </div>
+            <div className="mobile-title">
+              <h4>JP Morgan Chase</h4>
+            </div>
+            <div className="mobile-industry">
+              <p>Industry</p>
+              <p>Bank size</p>
+            </div>
+            <div className="mobile-text">
+              <p>
+                JPMorgan Chase (NYSE: JPM) is one of the oldest financial
+                institutions in the United States. With a history dating back
+                over...
+              </p>
+            </div>
+            <small>Read more</small>
+
+            <div className="border-bottom"></div>
+
+            <div className="connect-mail">
+              <div className="connect-name">
+                <h5>Marvin Hogan</h5>
+                <p>connect</p>
+              </div>
+              <p>mhogan@morganchase.com</p>
+            </div>
+            <div className="connect-mail">
+              <div className="connect-name">
+                <h5>Casey Thompson</h5>
+                <p>connect</p>
+              </div>
+              <p>cthompson@morganchase.com</p>
+            </div>
+          </div>
+        </Slider>
       </div>
 
       <div className="banks">

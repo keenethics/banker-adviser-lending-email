@@ -226,8 +226,15 @@
   .get-list-wrap {
     padding: 40px 10px 50px 10px;
   }
+
   .get-list {
     display: block;
+  }
+
+  .get-list input {
+    box-shadow: 0px 4px 4px #eef1ff;
+    width: 100%;
+    max-width: 100%;
   }
 
   .get-list button {
