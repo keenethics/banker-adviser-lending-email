@@ -21,7 +21,7 @@ const Header = () => {
               Your Financial Insider
             </h1>
             <p>Invest wisely.</p>
-            <button className="button">Let`s talk</button>
+            <button className="button primary">Let`s talk</button>
           </header>
         </div>
       </div>

@@ -28,6 +28,9 @@ footer {
 #footer-content button {
   margin-left: -70px;
 }
+#footer-content input:focus {
+  box-shadow: none;
+}
 
 @media (max-width: 569px) and (min-width: 375px) {
   #footer-content {

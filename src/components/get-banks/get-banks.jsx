@@ -24,7 +24,7 @@ const GetBanks = () => {
                 placeholder="Enter your email "
                 type="text"
               />
-              <button className="button">GET THE LIST</button>
+              <button className="button primary">GET THE LIST</button>
             </div>
           </div>
         </div>

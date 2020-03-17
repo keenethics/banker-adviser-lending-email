@@ -7,8 +7,10 @@ import logo3 from "./image12.png";
 
 const Banks = () => {
   return (
-    <section id="banks">
-      <h3>What Does BankerAdvisor Offer?</h3>
+    <section id="banks-section">
+      <div className="mobile-title">
+        <h3>What Does BankerAdvisor Offer?</h3>
+      </div>
       <div className="mobile-bank-wrap">
         <div className="mobile-bank">
           <div className="mobile-bank-header">
@@ -53,7 +55,6 @@ const Banks = () => {
           </div>
         </div>
       </div>
-
 
       <div className="banks">
         <div className="banks-wrap">

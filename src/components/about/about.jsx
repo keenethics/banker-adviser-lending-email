@@ -52,7 +52,7 @@ const About = () => {
       <div class="get-list-wrap">
         <div class="get-list">
           <input className="input" placeholder="Enter your email " type="text" />
-          <button className="button">GET THE LIST</button>
+          <button className="button blue-btn">GET THE LIST</button>
         </div>
       </div>
     </section>

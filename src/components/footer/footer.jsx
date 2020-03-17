@@ -8,7 +8,7 @@ const Footer = () => {
       <div id="footer-content">
         <h4>Meet the Other 297 Top NYC Investment Banks!</h4>
         <input className="input" placeholder="Enter your email" type="text"/>
-        <button className="button">GET THE LIST</button>
+        <button className="button primary">GET THE LIST</button>
       </div>
     </footer>
   );

@@ -10,15 +10,33 @@
   height: 42px;
 }
 
+.primary {
+  background-color: #fd7607;
+}
+
+.primary:hover {
+  background-color: #E66B06;
+  transition: all .1s;
+}
+
+.blue-btn {
+  background-color: #01216b;
+  transition: all .1s;
+}
+
+.blue-btn:hover {
+  background-color: #0236B0;
+}
+
 .button {
   font-style: normal;
   font-weight: bold;
   width: 164px;
   height: 42px;
+  cursor: pointer;
   border: none;
   outline: none;
   border-radius: 20px;
-  background-color: #fd7607;
   line-height: 17px;
   letter-spacing: 0.02em;
   font-size: 14px;
