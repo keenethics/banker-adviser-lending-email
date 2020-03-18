@@ -28,8 +28,18 @@ footer {
 #footer-content button {
   margin-left: -70px;
 }
+
 #footer-content input:focus {
   box-shadow: none;
+}
+
+.footer-from-wrap {
+  position: relative;
+}
+
+#footer-content .footer-from-wrap p {
+  text-align: left;
+  padding-left: 85px ;
 }
 
 @media (max-width: 569px) and (min-width: 375px) {
@@ -52,5 +62,11 @@ footer {
     width: 100%;
     max-width: 100%;
   }
+
+  #footer-content .footer-from-wrap p {
+    text-align: left;
+    padding-left: 25px;
+  }
+
 
 }
