@@ -51,14 +51,14 @@ const Banks = () => {
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Marvin Hogan</h5>
-                <p>connect</p>
+                <a href="">connect</a>
               </div>
               <p>mhogan@morganchase.com</p>
             </div>
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Casey Thompson</h5>
-                <p>connect</p>
+                <a href="">connect</a>
               </div>
               <p>cthompson@morganchase.com</p>
             </div>
@@ -93,14 +93,14 @@ const Banks = () => {
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Marvin Hogan</h5>
-                <p>connect</p>
+                <a href="">connect</a>
               </div>
               <p>mhogan@morganchase.com</p>
             </div>
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Casey Thompson</h5>
-                <p>connect</p>
+                <a href="">connect</a>
               </div>
               <p>cthompson@morganchase.com</p>
             </div>
@@ -135,14 +135,14 @@ const Banks = () => {
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Marvin Hogan</h5>
-                <p>connect</p>
+                <a href="">connect</a>
               </div>
               <p>mhogan@morganchase.com</p>
             </div>
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Casey Thompson</h5>
-                <p>connect</p>
+                <a href="">connect</a>
               </div>
               <p>cthompson@morganchase.com</p>
             </div>
@@ -182,14 +182,14 @@ const Banks = () => {
                     <p>Marvin Hogan</p>
                     <p>mhogan@morganchase.com</p>
                   </div>
-                  <p>connect</p>
+                  <a href="">connect</a>
                 </div>
                 <div className="connect-person-item">
                   <div className="connect-name-email">
                     <p>Marvin Hogan</p>
                     <p>mhogan@morganchase.com</p>
                   </div>
-                  <p>connect</p>
+                  <a href="">connect</a>
                 </div>
               </div>
             </div>
@@ -223,14 +223,14 @@ const Banks = () => {
                     <p>Marvin Hogan</p>
                     <p>mhogan@morganchase.com</p>
                   </div>
-                  <p>connect</p>
+                  <a href="">connect</a>
                 </div>
                 <div className="connect-person-item">
                   <div className="connect-name-email">
                     <p>Marvin Hogan</p>
                     <p>mhogan@morganchase.com</p>
                   </div>
-                  <p>connect</p>
+                  <a href="mailto:tabakastepan@gmail.com">connect</a>
                 </div>
               </div>
             </div>
@@ -264,14 +264,14 @@ const Banks = () => {
                     <p>Marvin Hogan</p>
                     <p>mhogan@morganchase.com</p>
                   </div>
-                  <p>connect</p>
+                  <a href="">connect</a>
                 </div>
                 <div className="connect-person-item">
                   <div className="connect-name-email">
                     <p>Marvin Hogan</p>
                     <p>mhogan@morganchase.com</p>
                   </div>
-                  <p>connect</p>
+                  <a href="">connect</a>
                 </div>
               </div>
             </div>

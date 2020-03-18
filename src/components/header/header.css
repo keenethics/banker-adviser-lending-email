@@ -13,6 +13,7 @@
 
 .intro-logo img {
   margin: 65px 0 130px 0;
+  cursor: pointer;
 }
 
 .intro-left h1 {

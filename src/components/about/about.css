@@ -80,6 +80,7 @@
   font-weight: bold;
   font-size: 44px;
   line-height: 54px;
+  max-width: 800px;
 }
 
 .meet-banks p {
@@ -95,6 +96,7 @@
 .get-list {
   max-width: 600px;
   display: flex;
+  position: relative;
   width: 100%;
 }
 
@@ -176,12 +178,10 @@
 
   .about-description {
     display: flex;
-    justify-content: center;
-    padding-left: 10px;
   }
 
   .about-logo {
-    width: 180px;
+    width: 140px;
     height: 140px;
     margin: 0;
     margin-right: 30px;
@@ -239,7 +239,7 @@
 
   .get-list button {
     margin: 0;
-    margin-top: 15px;
+    margin-top: 20px;
     width: 100%;
   }
 }

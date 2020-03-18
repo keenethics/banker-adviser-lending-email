@@ -1,28 +1,28 @@
 import React from "react";
 
 import "./about.css";
-import person from "./Casey.png"
-import svg from "./Vector.svg"
+import person from "./Casey.png";
+import svg from "./Vector.svg";
+import GetListInput from "../get-list-input/get-list-input";
 
 const About = () => {
   return (
     <section id="about">
-      <div class="about-wrap">
-      <div class="about-description">
-          <div class="about-logo">
+      <div className="about-wrap">
+        <div className="about-description">
+          <div className="about-logo">
             <img src={person} alt="Mike Casey" />
           </div>
-          <div class="about-partner-wrap">
-            <div class="about-name">
+          <div className="about-partner-wrap">
+            <div className="about-name">
               <h2>Mike Casey</h2>
             </div>
             <p className="about-partner">
-              Partner, Executive Committee
-              Member TechCXO
+              Partner, Executive Committee Member TechCXO
             </p>
           </div>
         </div>
-        <div class="about-text">
+        <div className="about-text">
           <p>
             It is always a good idea to make banking and financial decisions
             with the trust and confidence of peer reviews.
@@ -37,22 +37,20 @@ const About = () => {
           </p>
         </div>
         <div className="about-svg">
-          <img src={svg} alt="svg logo"/>
+          <img src={svg} alt="svg logo" />
         </div>
       </div>
-      <div class="meet-banks-wrap">
-        <div class="meet-banks">
-          <h2>
-            Meet the Top 300 Investment Banks and
-            M&A Advisors in NYC!
-          </h2>
+      <div className="meet-banks-wrap">
+        <div className="meet-banks">
+          <h2>Meet the Top 300 Investment Banks and M&A Advisors in NYC!</h2>
           <p>Learn how relevant a particular bank is to your needs.</p>
         </div>
       </div>
-      <div class="get-list-wrap">
-        <div class="get-list">
-          <input className="input" placeholder="Enter your email " type="text" />
+      <div className="get-list-wrap">
+        <div className="get-list">
+          <GetListInput />
           <button className="button blue-btn">GET THE LIST</button>
+          {/* <p>asdadadasd</p> */}
         </div>
       </div>
     </section>

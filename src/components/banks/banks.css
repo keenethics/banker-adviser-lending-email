@@ -116,6 +116,16 @@
   color: #081e31;
 }
 
+.connect-person-item a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #0039a6;
+}
+
 .connect-name-email {
   display: flex;
   width: 75%;
