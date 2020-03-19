@@ -14,18 +14,18 @@ import ModalComponent from "../modal/modal";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const togglemodal = (toggler) => {
+  const togglemodal = toggler => {
     setIsOpen(toggler);
-  }
+  };
   return (
     <div className="container">
       <ModalComponent isOpen={isOpen} togglemodal={togglemodal} />
       <Header togglemodal={togglemodal} />
       <About />
       <BanderAdvisorOffer />
-      <GetBanks />
+      <GetBanks togglemodal={togglemodal} />
       <Banks />
-      <Footer />
+      <Footer togglemodal={togglemodal} />
     </div>
   );
 }

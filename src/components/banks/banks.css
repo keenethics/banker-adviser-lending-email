@@ -97,7 +97,6 @@
 
 .connect-person-item {
   display: flex;
-  width: 80%;
   margin-bottom: 13px;
   align-items: center;
   justify-content: space-between;
@@ -106,6 +105,8 @@
 .connect-person-item .connect-name-email p:first-child {
   font-weight: bold;
   font-size: 18px;
+  padding-right: 10px;
+  flex: 0 0 60%;
   line-height: 22px;
   color: #081e31;
 }
@@ -113,22 +114,14 @@
   font-size: 18px;
   line-height: 22px;
   text-decoration-line: underline;
+  flex: 0 0 40%;
   color: #081e31;
-}
-
-.connect-person-item a {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  text-decoration: none;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #0039a6;
 }
 
 .connect-name-email {
   display: flex;
   width: 75%;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -160,7 +153,7 @@
 
   .connect-person-item {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin-bottom: 13px;
     justify-content: space-between;
   }
@@ -168,10 +161,12 @@
   .connect-name-email {
     display: flex;
     flex-direction: column;
+    width: auto;
+    align-items: flex-start;
     justify-content: space-between;
   }
   .bank-industry p small {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .bank-logo img {
     width: 165px;
@@ -266,6 +261,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #0039a6;
+    margin-left: 10px;
   }
 
   .border-bottom {
@@ -289,6 +285,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
+    padding-right: 5px;
     color: #081e31;
   }
 

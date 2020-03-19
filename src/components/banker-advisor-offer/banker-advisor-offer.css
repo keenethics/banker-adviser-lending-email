@@ -61,7 +61,7 @@
 
 @media (max-width: 569px) and (min-width: 375px) {
   .offer-item:not(:last-child) {
-    margin-right: 0 ;
+    margin-right: 0;
     margin-bottom: 20px;
   }
 
@@ -70,15 +70,19 @@
     padding: 0 10px;
   }
 
+  .banker-offer-text {
+    padding: 0 10px;
+  }
+
   #banker-offer {
     margin-top: 30px;
   }
 
   #banker-offer .offers {
-    padding: 0 3% ;
+    padding: 0 3%;
     flex-direction: column;
   }
   .offer-item {
-    padding: 12% 7% 8% 10% ;
+    padding: 12% 7% 8% 10%;
   }
 }

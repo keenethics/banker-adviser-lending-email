@@ -94,16 +94,10 @@
   }
   .share-banks p:first-child {
     margin-bottom: 0 !important;
+    width: 470px;
   }
   .share-banks p {
     margin-bottom: 30px !important;
-  }
-  .share-banks p b {
-    display: block;
-  }
-  .share-banks p > b > p {
-    display: inline-block;
-    font-weight: normal;
   }
 }
 

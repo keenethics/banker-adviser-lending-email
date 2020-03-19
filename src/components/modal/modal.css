@@ -7,13 +7,23 @@
   border-radius: 8px !important;
 }
 
+.ReactModal__Overlay {
+  z-index: 555555555 !important;
+}
+
 #modal h5 {
-font-size: 24px;
-line-height: 34px;
-text-align: center;
-color: #01216B;
-margin-top: 10px;
-margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 34px;
+  color: #01216b;
+  margin-bottom: 25px;
+}
+
+#modal header p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #01216b;
+  padding-right: 30px;
+  margin-bottom: 30px;
 }
 
 .close-btn {
@@ -22,11 +32,9 @@ margin-bottom: 40px;
   justify-content: flex-end;
 }
 
-.modal-form-wrap{
+.modal-form-wrap {
   display: flex;
-  flex-direction: column;
-  max-width: 450px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .modal-form-wrap input {
@@ -35,17 +43,19 @@ margin-bottom: 40px;
 }
 
 .modal-form-wrap button {
-  align-self: flex-end;
-  margin-bottom: 18px;
+  padding: 0 25px;
+  width: auto;
+  right: 0;
+  position: absolute;
 }
 
-.modal-form-wrap p {
+#modal form p {
   padding-left: 25px;
   height: 14px;
   font-weight: bold;
   font-size: 10px;
   line-height: 14px;
-  color: #01216B;
+  color: #01216b;
   margin-top: -15px;
   margin-bottom: 10px;
 }
@@ -53,5 +63,30 @@ margin-bottom: 40px;
 @media (max-width: 569px) and (min-width: 375px) {
   #modal h5 {
     padding: 0;
+  }
+
+  .modal-form-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .modal-form-wrap input {
+    margin-bottom: 10px;
+  }
+
+  .modal-form-wrap button {
+    padding: 0 25px;
+    width: auto;
+    position: relative;
+  }
+
+  #modal form p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  #modal header p {
+    padding-right: 0;
   }
 }

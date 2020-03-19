@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-use-before-define */
 import React, { useEffect, useRef, useState } from "react";
 import Modal from "react-modal";
 
@@ -25,6 +24,21 @@ const ModalComponent = ({ isOpen, togglemodal }) => {
     </p>
   );
 
+  const handleChange = e => {
+    let name = e.target.name;
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(e.target.value)) {
+      setError(true);
+      setSuccess(false);
+    } else {
+      setError(false);
+      setSuccess(true);
+    }
+    setState({
+      ...state,
+      [name]: e.target.value
+    });
+  };
+
   const clickModalWhenClickOuter = e => {
     if (
       e.target.className ===
@@ -40,48 +54,33 @@ const ModalComponent = ({ isOpen, togglemodal }) => {
       document.removeEventListener("click", clickModalWhenClickOuter);
       setState({});
       setError(false);
+      setSuccess(false);
     };
   }, []);
 
-  const handleChange = e => {
-    let name = e.target.name;
-    if (name === "email") {
-      if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(e.target.value)) {
-        setError(true);
-        setSuccess(false);
-      } else {
-        setError(false);
-        setSuccess(true);
-      }
-    }
-    setState({
-      ...state,
-      [name]: e.target.value
-    });
-  };
   return (
-    <Modal ref={modalRef} ariaHideApp={false} id="modal" isOpen={isOpen}>
+    <Modal ariaHideApp={false} ref={modalRef} id="modal" isOpen={isOpen}>
       <div className="close-btn">
         <img
-          onClickCapture={() => togglemodal(false)}
+          onClick={() => togglemodal(false)}
           src={closeLogo}
           alt="close logo"
         />
       </div>
-      <h5>
-        Enter your email to get direct access to 1000 investment bankers in NYC.
-      </h5>
+      <header>
+        <h5>LET`S TALK!</h5>
+        <p>
+          A list of
+          <b>Top 300 Investment Banks and M&A Advisors in New York City </b>
+          hand-picked by Mike Casey, will help you make a wise investment
+          decision. Receiving this list is easy – just discuss your banking &
+          investment experience with our experts.
+        </p>
+        <p>If you would agree, please, leave your email below.</p>
+      </header>
       <div>
-        <form autoComplete="off">
+        <form autoComplete="off" autoSave="off">
           <div className="modal-form-wrap">
-            <input
-              required
-              name="userName"
-              className="input"
-              onChange={handleChange}
-              placeholder="Enter your name"
-              type="text"
-            />
             <input
               required
               name="email"
@@ -90,10 +89,10 @@ const ModalComponent = ({ isOpen, togglemodal }) => {
               placeholder="Enter your email "
               type="text"
             />
-            {error && errMsg}
-            {success && successMsg}
-            <button className="button blue-btn">GET THE LIST</button>
+            <button className="button primary">Schedule a meeting</button>
           </div>
+          {error && errMsg}
+          {success && successMsg}
         </form>
       </div>
     </Modal>
