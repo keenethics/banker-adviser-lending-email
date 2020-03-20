@@ -63,6 +63,7 @@ const GetListForm = ({ white, btnClass }) => {
       <form onSubmit={handleSubmit} id="get-list-form" autoComplete="off">
         <input
           value={value}
+          required
           onChange={handleChange}
           className="input"
           placeholder="Enter your email "
