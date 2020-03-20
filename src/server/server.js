@@ -42,7 +42,8 @@ app.post("/send-email", function(req, res, next) {
   };
   transporter.sendMail(mail, (err, data) => {
     if (err) {
-      res.sendStatus(400);
+      console.log({ ...err });
+      res.json(err).status(400);
     } else {
       res.json({
         msg: "success"
