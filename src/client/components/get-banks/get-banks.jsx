@@ -2,7 +2,7 @@ import React from "react";
 
 import "./get-banks.css";
 import person from "./person.png";
-import GetListInput from "../get-list-input/get-list-form";
+import GetListInput from "../get-list-form/get-list-form";
 
 const GetBanks = () => {
   return (

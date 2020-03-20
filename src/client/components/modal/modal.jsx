@@ -4,7 +4,7 @@ import Modal from "react-modal";
 
 import "./modal.css";
 import closeLogo from "./close.svg";
-import GetListForm from "../get-list-input/get-list-form";
+import GetListForm from "../get-list-form/get-list-form";
 
 const ModalComponent = ({ isOpen, togglemodal }) => {
   const modalRef = useRef(null);

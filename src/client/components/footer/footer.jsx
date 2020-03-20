@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./footer.css";
-import GetListForm from "../get-list-input/get-list-form";
+import GetListForm from "../get-list-form/get-list-form";
 
 const Footer = () => {
   return (

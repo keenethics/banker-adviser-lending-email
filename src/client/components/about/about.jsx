@@ -3,7 +3,7 @@ import React from "react";
 import "./about.css";
 import person from "./Casey.png";
 import svg from "./Vector.svg";
-import GetListForm from "../get-list-input/get-list-form";
+import GetListForm from "../get-list-form/get-list-form";
 
 const About = () => {
   return (
