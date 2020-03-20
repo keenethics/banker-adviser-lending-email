@@ -1,0 +1,10 @@
+.hi {
+  color: red;
+  border-bottom: 5px solid greenyellow;
+  margin-bottom: 10px;
+}
+
+.img-email {
+  border: 2px solid red;
+  border-radius: 20px;
+}

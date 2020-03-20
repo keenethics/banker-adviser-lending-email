@@ -61,7 +61,6 @@
 .bank-industry div {
   display: flex;
   margin-bottom: 12px;
-  max-width: 310px;
   justify-content: space-between;
 }
 
@@ -69,6 +68,10 @@
   font-size: 18px;
   line-height: 22px;
   color: #0039a6;
+}
+
+.bank-industry div > p:first-child {
+  padding-right: 15px;
 }
 
 .bank-industry p {
@@ -249,6 +252,10 @@
     line-height: 22px;
     color: #0039a6;
     margin-bottom: 20px;
+  }
+
+  .mobile-industry > p:first-child {
+    padding-right: 35px;
   }
 
   .mobile-text {

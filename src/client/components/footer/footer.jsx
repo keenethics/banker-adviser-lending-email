@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./footer.css";
-import GetListInput from "../get-list-input/get-list-input";
+import GetListForm from "../get-list-input/get-list-form";
 
 const Footer = () => {
   return (
@@ -9,8 +9,7 @@ const Footer = () => {
       <div id="footer-content">
         <h4>Meet the Other 297 Top NYC Investment Banks!</h4>
         <div className="footer-from-wrap">
-          <GetListInput white />
-          <button className="button primary">GET THE LIST</button>
+          <GetListForm white btnClass="primary" />
         </div>
       </div>
     </footer>

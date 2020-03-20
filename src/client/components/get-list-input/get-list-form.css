@@ -11,3 +11,15 @@
   line-height: 14px !important;
   margin-top: -15px !important;
 }
+
+#get-list-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 569px) and (min-width: 375px) {
+  #get-list-form {
+    display: block;
+  }
+}

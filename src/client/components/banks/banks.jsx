@@ -36,8 +36,11 @@ const Banks = () => {
               <h4>Blackstone</h4>
             </div>
             <div className="mobile-industry">
-              <p>Industry</p>
-              <p>Bank size 1,000-5,000 employees</p>
+              <p>
+                Private Equity, Real Estate Infrastructure, Innovations, Life
+                Sciences
+              </p>
+              <p>1,000-5,000 employees</p>
             </div>
             <div className="mobile-text">
               <ReadMoreText
@@ -84,8 +87,11 @@ const Banks = () => {
               <h4>Palazzo</h4>
             </div>
             <div className="mobile-industry">
-              <p>Industry</p>
-              <p>Bank size</p>
+              <p>
+                Marketing, Media, Tech Infrastructure, Innovations, Life
+                Sciences
+              </p>
+              <p>11-50 employees</p>
             </div>
             <div className="mobile-text">
               <ReadMoreText
@@ -132,8 +138,8 @@ const Banks = () => {
               <h4>JPMorgan Chase & Co.</h4>
             </div>
             <div className="mobile-industry">
-              <p>Industry</p>
-              <p>Bank size</p>
+              <p>Financial Services</p>
+              <p>10,000+ employees</p>
             </div>
             <div className="mobile-text">
               <ReadMoreText
@@ -184,8 +190,11 @@ const Banks = () => {
               </div>
               <div className="bank-industry">
                 <div>
-                  <p>Industry</p>
-                  <p>Bank size &nbsp; 1,000-5,000 employees</p>
+                  <p>
+                    Private Equity, Real Estate Infrastructure, Innovations,
+                    Life Sciences
+                  </p>
+                  <p>1,000-5,000 employees</p>
                 </div>
                 <ReadMoreText
                   text="Blackstone is one of the world’s leading investment firms.
@@ -231,8 +240,11 @@ const Banks = () => {
               </div>
               <div className="bank-industry">
                 <div>
-                  <p>Industry</p>
-                  <p>Bank size &nbsp; 11-50 employees</p>
+                  <p>
+                    Marketing, Media, Tech Infrastructure, Innovations, Life
+                    Sciences
+                  </p>
+                  <p>11-50 employees</p>
                 </div>
                 <ReadMoreText
                   text="PALAZZO is a New York City based investment bank that provides M&A advisory
@@ -278,8 +290,8 @@ const Banks = () => {
               </div>
               <div className="bank-industry">
                 <div>
-                  <p>Industry</p>
-                  <p>Bank size &nbsp; 10,000+ employees</p>
+                  <p>Financial Services </p>
+                  <p>10,000+ employees</p>
                 </div>
                 <ReadMoreText
                   text="For over 200 years, JPMorgan Chase & Co. has provided innovative financial

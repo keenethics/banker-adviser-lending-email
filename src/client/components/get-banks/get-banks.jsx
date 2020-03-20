@@ -2,7 +2,7 @@ import React from "react";
 
 import "./get-banks.css";
 import person from "./person.png";
-import GetListInput from "../get-list-input/get-list-input";
+import GetListInput from "../get-list-input/get-list-form";
 
 const GetBanks = () => {
   return (
@@ -24,8 +24,7 @@ const GetBanks = () => {
             <p>and their decision-makers. </p>
 
             <div class="share-banks-form">
-              <GetListInput white />
-              <button className="button primary">GET THE LIST</button>
+              <GetListInput white btnClass="primary" />
             </div>
           </div>
         </div>

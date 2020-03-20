@@ -3,7 +3,7 @@ import React from "react";
 import "./about.css";
 import person from "./Casey.png";
 import svg from "./Vector.svg";
-import GetListInput from "../get-list-input/get-list-input";
+import GetListForm from "../get-list-input/get-list-form";
 
 const About = () => {
   return (
@@ -48,9 +48,7 @@ const About = () => {
       </div>
       <div className="get-list-wrap">
         <div className="get-list">
-          <GetListInput />
-          <button className="button blue-btn">GET THE LIST</button>
-          {/* <p>asdadadasd</p> */}
+          <GetListForm btnClass="blue-btn" />
         </div>
       </div>
     </section>
