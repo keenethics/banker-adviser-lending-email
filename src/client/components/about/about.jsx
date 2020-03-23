@@ -32,8 +32,7 @@ const About = () => {
             professional opinion on financial decisions
           </p>
           <p>
-            The list of bankers is provided to you by Mike Casey, an investment
-            banker with 30 years of experience.
+            The list of bankers is provided to you by me, Mike Casey, an investment banker with 30 years of experience
           </p>
         </div>
         <div className="about-svg">

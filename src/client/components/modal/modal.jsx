@@ -70,14 +70,13 @@ const ModalComponent = ({ isOpen, togglemodal }) => {
       </div>
       <header>
         <h5>LET`S TALK!</h5>
+        <span>To help you make a wise investment decision, here is what we offer:</span>
         <p>
           A list of &nbsp;
-          <b>Top 300 Investment Banks and M&A Advisors in New York City </b>
-          hand-picked by Mike Casey, will help you make a wise investment
-          decision. Receiving this list is easy – just discuss your banking &
-          investment experience with our experts.
+          A list of <b> Top 300 Investment Banks and M&A Advisors in New York City </b>
+          hand-picked by Mike Casey, an expert in Banking & Investment with over 30 years of experience in the field.
         </p>
-        <p>If you would agree, please, leave your email below.</p>
+        <p>Please, leave your email below.</p>
       </header>
       <div>
         {/* <form autoComplete="off" autoSave="off"> */}

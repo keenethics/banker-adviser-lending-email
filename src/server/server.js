@@ -8,7 +8,7 @@ app.listen(PORT, () => console.log("========= SERVER IS RUNNING AT " + PORT));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "./../../build")));
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
   res.header(
     "Access-Control-Allow-Headers",
@@ -17,7 +17,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "./../../build", "index.html"));
 });
 
@@ -41,7 +41,7 @@ transporter.verify((error, success) => {
   }
 });
 
-app.post("/send-email", function(req, res, next) {
+app.post("/send-email", function (req, res, next) {
   var mail = {
     from: "Mike Casey <mike.casey@techcxo.com>",
     data: new Date().toUTCString(),
