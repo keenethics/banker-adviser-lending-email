@@ -2,10 +2,9 @@ import React from "react";
 
 import "./header.css";
 
-import img from "./rectangle.jpg";
-import logo from "./logo.png";
+import logo from "./banker-logo.svg";
 
-const Header = ({togglemodal}) => {
+const Header = ({ togglemodal }) => {
 
   function openInNewTab() {
     window.open("https://bankeradvisor.com/", "_blank");
@@ -16,13 +15,11 @@ const Header = ({togglemodal}) => {
       <div className="intro-left-wrap">
         <div className="intro-left">
           <div className="intro-logo">
-            {/* <a href="https://bankeradvisor.com/"> */}
             <img
               onClick={openInNewTab}
               src={logo}
               alt="banker left advisor logo"
             />
-            {/* </a> */}
           </div>
           <header>
             <h1>

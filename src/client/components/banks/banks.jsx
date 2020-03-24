@@ -62,16 +62,16 @@ const Banks = () => {
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Alexandra Hill, Sr. Managing Director</h5>
-                <p>connect</p>
+                <a href="mailto:alexandra.hill@blackstone.com">connect</a>
               </div>
-              <p>alexandra.hill@blackstone.com </p>
+              <a href="mailto:alexandra.hill@blackstone.com">alexandra.hill@blackstone.com</a>
             </div>
             <div className="connect-mail">
               <div className="connect-name">
-                <h5>Eli Nagler, Managing Director </h5>
-                <p>connect</p>
+                <h5>Eli Nagler, Managing Director</h5>
+                <a href="mailto:eli.nagler@blackstone.com">connect</a>
               </div>
-              <p>eli.nagler@blackstone.com</p>
+              <a href="mailto:eli.nagler@blackstone.com">eli.nagler@blackstone.com</a>
             </div>
           </div>
           <div className="mobile-bank">
@@ -113,16 +113,16 @@ const Banks = () => {
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Peter Cosco, Managing Director</h5>
-                <p>connect</p>
+                <a href="mailto:pcosco@palazzonyc.com">connect</a>
               </div>
-              <p>pcosco@palazzonyc.com</p>
+              <a href="mailto:pcosco@palazzonyc.com">pcosco@palazzonyc.com</a>
             </div>
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Matt Hasson, Managing Director </h5>
-                <p>connect</p>
+                <a href="mailto:mhasson@palazzonyc.com">connect</a>
               </div>
-              <p>mhasson@palazzonyc.com</p>
+              <a href="mailto:mhasson@palazzonyc.com">mhasson@palazzonyc.com</a>
             </div>
           </div>
           <div className="mobile-bank">
@@ -159,16 +159,16 @@ const Banks = () => {
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>David Disi, Chief Investment Officer</h5>
-                <p>connect</p>
+                <a href="mailto:david@jpmorgan.com">connect</a>
               </div>
-              <p>david@jpmorgan.com </p>
+              <a href="mailto:david@jpmorgan.com">david@jpmorgan.com </a>
             </div>
             <div className="connect-mail">
               <div className="connect-name">
                 <h5>Andrea Stefanucci, Executive Director</h5>
-                <p>connect</p>
+                <a href="mailto:astefanucci@jpmorgan.com">connect</a>
               </div>
-              <p>astefanucci@jpmorgan.com</p>
+              <a href="mailto:astefanucci@jpmorgan.com">astefanucci@jpmorgan.com</a>
             </div>
           </div>
         </Slider>
@@ -213,16 +213,16 @@ const Banks = () => {
                 <div className="connect-person-item">
                   <div className="connect-name-email">
                     <p>Alexandra Hill, Sr. Managing Director</p>
-                    <p>alexandra.hill@blackstone.com</p>
+                    <a href="mailto:alexandra.hill@blackstone.com">alexandra.hill@blackstone.com</a>
                   </div>
-                  <p>connect</p>
+                  <a href="mailto:alexandra.hill@blackstone.com">connect</a>
                 </div>
                 <div className="connect-person-item">
                   <div className="connect-name-email">
                     <p>Eli Nagler, Managing Director</p>
-                    <p>eli.nagler@blackstone.com</p>
+                    <a href="mailto:eli.nagler@blackstone.com">eli.nagler@blackstone.com</a>
                   </div>
-                  <p>connect</p>
+                  <a href="mailto:eli.nagler@blackstone.com">connect</a>
                 </div>
               </div>
             </div>
@@ -263,16 +263,16 @@ const Banks = () => {
                 <div className="connect-person-item">
                   <div className="connect-name-email">
                     <p>Peter Cosco, Managing Director</p>
-                    <p>pcosco@palazzonyc.com</p>
+                    <a href="mailto:pcosco@palazzonyc.com">pcosco@palazzonyc.com</a>
                   </div>
-                  <p>connect</p>
+                  <a href="mailto:pcosco@palazzonyc.com">connect</a>
                 </div>
                 <div className="connect-person-item">
                   <div className="connect-name-email">
                     <p>Matt Hasson, Managing Director</p>
-                    <p>mhasson@palazzonyc.com </p>
+                    <a href="mailto:mhasson@palazzonyc.com">mhasson@palazzonyc.com</a>
                   </div>
-                  <p>connect</p>
+                  <a href="mailto:mhasson@palazzonyc.com">connect</a>
                 </div>
               </div>
             </div>
@@ -308,16 +308,16 @@ const Banks = () => {
                 <div className="connect-person-item">
                   <div className="connect-name-email">
                     <p>David Disi, Chief Investment Officer</p>
-                    <p>david@jpmorgan.com</p>
+                    <a href="mailto:david@jpmorgan.com">david@jpmorgan.com</a>
                   </div>
-                  <p>connect</p>
+                  <a href="mailto:david@jpmorgan.com">connect</a>
                 </div>
                 <div className="connect-person-item">
                   <div className="connect-name-email">
                     <p>Andrea Stefanucci, Executive Director</p>
-                    <p>astefanucci@jpmorgan.com</p>
+                    <a href="mailto:astefanucci@jpmorgan.com">astefanucci@jpmorgan.com</a>
                   </div>
-                  <p>connect</p>
+                  <a href="mailto:astefanucci@jpmorgan.com">connect</a>
                 </div>
               </div>
             </div>

@@ -5,6 +5,7 @@ import Axios from "axios";
 
 import "./get-list-form.css";
 import successIcon from "./success.svg";
+import Spinner from "../spinner/spinner";
 
 const GetListForm = ({ white, btnClass }) => {
   const [error, setError] = useState(false);
@@ -17,7 +18,12 @@ const GetListForm = ({ white, btnClass }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    if (error || loading) return;
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
+      setError(true);
+      return;
+    }
+    if (loading) return;
+    setError(false);
     setLoading(true);
     Axios.post("/send-email", { value, messageHtml }).then(() => {
       clearTimeout(timerId);
@@ -27,15 +33,10 @@ const GetListForm = ({ white, btnClass }) => {
       timerId = setTimeout(() => {
         setSuccess(false);
       }, 5000);
-    });
+    }).catch(err => setLoading(false))
   };
 
   const handleChange = e => {
-    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(e.target.value)) {
-      setError(true);
-    } else {
-      setError(false);
-    }
     setValue(e.target.value);
   };
 
@@ -50,12 +51,12 @@ const GetListForm = ({ white, btnClass }) => {
     </p>
   );
   const btnMessage = loading ? (
-    "loading"
+    <Spinner />
   ) : success ? (
     <img src={successIcon} alt="success logo" />
   ) : (
-    "GET THE LIST"
-  );
+        "GET THE LIST"
+      );
   return (
     <React.Fragment>
       {error && errMsg}
