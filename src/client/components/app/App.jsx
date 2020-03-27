@@ -1,5 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Axios from "axios";
+import qs from "query-string";
 
 import Header from "../header/header";
 import About from "../about/about";
@@ -7,6 +9,8 @@ import BanderAdvisorOffer from "../banker-advisor-offer/BankerAdvisorOffer";
 import GetBanks from "../get-banks/get-banks";
 import Banks from "../banks/banks";
 import Footer from "../footer/footer";
+import InlineLink from "../mail/mail";
+import { renderEmail } from "react-html-email";
 import ModalComponent from "../modal/modal";
 
 import "./app.css";
@@ -15,11 +19,30 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-
   const togglemodal = toggler => {
     setIsOpen(toggler);
   };
-  console.log(isOpen);
+
+  const messageHtml = renderEmail(<InlineLink name="Stepan" />);
+
+
+  // useEffect(() => {
+  //   const parseParams = qs.parse(window.location.search);
+  //   if (!parseParams.PayerID || !parseParams.paymentId || !parseParams.token) return;
+  //   // setIsOpen(true)
+  //   Axios.get('/success', { params: { ...parseParams, messageHtml } }).then(res => {
+  //     const link = document.createElement('a');
+  //     link.href = res.data.url;
+  //     link.style.display = "none"
+  //     link.setAttribute('download', 'file.docx');
+  //     document.body.appendChild(link);
+  //     window.history.pushState("home", "Banker Adviser", "/")
+  //     setTimeout(() => {
+  //       link.click();
+  //     }, 3000);
+  //   })
+  // }, []);
+
   return (
     <div className="container">
       <ModalComponent isOpen={isOpen} togglemodal={togglemodal} />

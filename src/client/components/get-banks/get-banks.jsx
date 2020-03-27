@@ -17,13 +17,13 @@ const GetBanks = () => {
               Share your email to{" "}
               <b>
                 {" "}
-                get the database <p>of the</p>{" "}
+                get the database <span>of the</span>{" "}
               </b>
             </p>
             <h3>Top 300 Investment Banks in New York </h3>
             <p>and their decision-makers. </p>
 
-            <div class="share-banks-form">
+            <div className="share-banks-form">
               <GetListInput white btnClass="primary" />
             </div>
           </div>
