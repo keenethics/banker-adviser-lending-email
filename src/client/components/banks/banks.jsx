@@ -13,7 +13,7 @@ const Banks = () => {
     infinite: false,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   return (
@@ -57,7 +57,7 @@ const Banks = () => {
             </div>
             {/* <small>Read more</small> */}
 
-            <div className="border-bottom"></div>
+            <div className="border-bottom" />
 
             <div className="connect-mail">
               <div className="connect-name">
@@ -108,7 +108,7 @@ const Banks = () => {
             </div>
             {/* <small>Read more</small> */}
 
-            <div className="border-bottom"></div>
+            <div className="border-bottom" />
 
             <div className="connect-mail">
               <div className="connect-name">
@@ -154,7 +154,7 @@ const Banks = () => {
             </div>
             {/* <small>Read more</small> */}
 
-            <div className="border-bottom"></div>
+            <div className="border-bottom" />
 
             <div className="connect-mail">
               <div className="connect-name">
@@ -208,7 +208,7 @@ const Banks = () => {
                   services."
                 />
               </div>
-              <div className="border-bottom"></div>
+              <div className="border-bottom" />
               <div className="connect-person">
                 <div className="connect-person-item">
                   <div className="connect-name-email">
@@ -258,7 +258,7 @@ const Banks = () => {
                   in the sectors it covers."
                 />
               </div>
-              <div className="border-bottom"></div>
+              <div className="border-bottom" />
               <div className="connect-person">
                 <div className="connect-person-item">
                   <div className="connect-name-email">
@@ -303,7 +303,7 @@ const Banks = () => {
                   the future and strengthen both our clients and our communities."
                 />
               </div>
-              <div className="border-bottom"></div>
+              <div className="border-bottom" />
               <div className="connect-person">
                 <div className="connect-person-item">
                   <div className="connect-name-email">

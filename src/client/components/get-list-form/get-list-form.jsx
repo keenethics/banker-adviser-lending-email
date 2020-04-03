@@ -1,7 +1,8 @@
+/* eslint-disable no-nested-ternary */
 import React, { useState } from "react";
 import { renderEmail } from "react-html-email";
-import InlineLink from "../mail/mail";
 import Axios from "axios";
+import InlineLink from "../mail/mail";
 
 import "./get-list-form.css";
 import successIcon from "./success.svg";
@@ -11,12 +12,12 @@ const GetListForm = ({ white, btnClass }) => {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
-  let [value, setValue] = useState("");
+  const [value, setValue] = useState("");
   let timerId = null;
 
   const messageHtml = renderEmail(<InlineLink name="Stepan" />);
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
       setError(true);
@@ -33,10 +34,10 @@ const GetListForm = ({ white, btnClass }) => {
       timerId = setTimeout(() => {
         setSuccess(false);
       }, 5000);
-    }).catch(err => setLoading(false))
+    }).catch(() => setLoading(false));
   };
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setValue(e.target.value);
   };
 
@@ -54,11 +55,9 @@ const GetListForm = ({ white, btnClass }) => {
     <Spinner />
   ) : success ? (
     <img src={successIcon} alt="success logo" />
-  ) : (
-        "GET THE LIST"
-      );
+  ) : "GET THE LIST";
   return (
-    <React.Fragment>
+    <>
       {error && errMsg}
       {success && successMsg}
       <form onSubmit={handleSubmit} id="get-list-form" autoComplete="off">
@@ -70,9 +69,9 @@ const GetListForm = ({ white, btnClass }) => {
           placeholder="Enter your email "
           type="text"
         />
-        <button className={`button ${btnClass}`}>{btnMessage}</button>
+        <button type="submit" className={`button ${btnClass}`}>{btnMessage}</button>
       </form>
-    </React.Fragment>
+    </>
   );
 };
 

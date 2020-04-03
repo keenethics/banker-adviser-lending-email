@@ -1,5 +1,7 @@
 import React from "react";
-import { Email, Item, Box, A, Image, Span } from "react-html-email";
+import {
+  Email, Item, Box, Image, Span,
+} from "react-html-email";
 import "./mail.css";
 
 export default function InlineLink() {
@@ -7,16 +9,16 @@ export default function InlineLink() {
     fontFamily: "Lato",
     fontSize: "24px",
     lineHeight: "34px",
-    color: "#01216B"
+    color: "#01216B",
   };
   const textCss = {
     fontFamily: "Lato",
     fontSize: "18px",
     color: "#01216B",
-    lineHeight: "24px"
+    lineHeight: "24px",
   };
   const secondHead = {
-    fontWeight: "bold"
+    fontWeight: "bold",
   };
   return (
     <Email>
@@ -75,9 +77,9 @@ export default function InlineLink() {
               borderRadius: "5px",
               padding: "15px 5px 5px 0px",
               marginTop: "20px",
-              height: "72px"
+              height: "72px",
             }}
-          ></td>
+          />
         </Box>
         <Box>
           <Span {...secondHead} {...textCss}>
@@ -93,33 +95,4 @@ export default function InlineLink() {
       </Item>
     </Email>
   );
-}
-
-// Mike Casey,
-// Partner, Executive Committee
-// Member TechCXO
-
-{
-  /* <td
-            style={{
-              ...textCss,
-              verticalAlign: "middle",
-              borderLeft: "2px solid red",
-              backgroundColor: "#505050",
-              borderRadius: "5px"
-            }}
-            >
-            <Span {...textCss}></Span>
-            Mike Casey,
-            <Item>
-            <tr>
-            <Span {...textCss}>Partner, Executive Committee</Span>
-            </tr>
-            </Item>
-            <Item>
-            <td>
-            <Span {...textCss}>Member TechCXO</Span>
-            </td>
-            </Item>
-          </td> */
 }

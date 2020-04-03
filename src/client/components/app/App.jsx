@@ -1,16 +1,13 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from "react";
-import Axios from "axios";
-import qs from "query-string";
+import React, { useState } from "react";
 
+// import { renderEmail } from "react-html-email";
 import Header from "../header/header";
 import About from "../about/about";
 import BanderAdvisorOffer from "../banker-advisor-offer/BankerAdvisorOffer";
 import GetBanks from "../get-banks/get-banks";
 import Banks from "../banks/banks";
 import Footer from "../footer/footer";
-import InlineLink from "../mail/mail";
-import { renderEmail } from "react-html-email";
+// import InlineLink from "../mail/mail";
 import ModalComponent from "../modal/modal";
 
 import "./app.css";
@@ -19,11 +16,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const togglemodal = toggler => {
+  const togglemodal = (toggler) => {
     setIsOpen(toggler);
   };
 
-  const messageHtml = renderEmail(<InlineLink name="Stepan" />);
+  // const messageHtml = renderEmail(<InlineLink name="Stepan" />);
 
 
   // useEffect(() => {
