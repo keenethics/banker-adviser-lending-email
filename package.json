@@ -41,6 +41,11 @@
       "last 1 safari version"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint --ext .jsx --ext .js ./src"
+    }
+  },
   "proxy": "http://localhost:3333",
   "devDependencies": {
     "eslint": "^6.8.0",
