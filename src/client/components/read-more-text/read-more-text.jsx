@@ -7,8 +7,7 @@ const ReadMoreText = ({ text }) => {
   ) : <small role="presentation" onClick={() => setShowText(true)}>Read more</small>;
   return (
     <p>
-      {showText ? text.slice(0) : `${text.slice(0, 115)}...`}
-      {" "}
+      {showText ? text : `${text.slice(0, 115)}...`}
       {readOrClose}
     </p>
   );

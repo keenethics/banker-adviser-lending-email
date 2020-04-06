@@ -1,17 +1,20 @@
 /* eslint-disable comma-dangle */
 import { shallow, mount } from "enzyme";
 import React from "react";
-import GetListForm from "./get-list-form";
+import axios from "axios";
 import Spinner from "../spinner/spinner";
+import GetListForm from "./get-list-form";
 
 
 jest.mock("axios");
 
 describe("tets Get list form component", () => {
-  it("show success message if value correct", async () => {
+  it("should hide spinner after success fetch", () => {
     const wrapper = mount(<GetListForm btnClass="blue" />);
-    wrapper.find("input").simulate("change", { target: { value: "tabaka@stepan.com" } });
-    expect(wrapper.find("input").prop("value")).toBe("tabaka@stepan.com");
+    const promise = Promise.resolve("hi");
+    axios.post = jest.fn(() => promise);
+    wrapper.find("input").simulate("change", { target: { value: "email@email.com" } });
+    expect(wrapper.find("input").prop("value")).toBe("email@email.com");
     wrapper.find("button").simulate("submit", { preventDefault() { } });
     expect(wrapper.find(Spinner)).toHaveLength(1);
   });

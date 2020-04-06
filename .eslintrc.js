@@ -7,6 +7,8 @@ module.exports = {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-console": "off",
     "no-plusplus": "off",
+    "import/no-named-as-default-member": "off",
+    "import/no-named-as-default": "off",
     "camelcase": "off"
   },
   "env": {

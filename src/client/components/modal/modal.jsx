@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import Modal from "react-modal";
 
 import "./modal.css";
@@ -7,9 +7,8 @@ import closeLogo from "./close.svg";
 import GetListForm from "../get-list-form/get-list-form";
 
 const ModalComponent = ({ isOpen, togglemodal }) => {
-  const modalRef = useRef(null);
-
-  const clickModalWhenClickOuter = (e) => {
+  const closeModalWhenClickOuter = (e) => {
+    console.log("hello");
     if (
       e.target.className
       === "ReactModal__Overlay ReactModal__Overlay--after-open"
@@ -19,9 +18,9 @@ const ModalComponent = ({ isOpen, togglemodal }) => {
   };
 
   useEffect(() => {
-    document.addEventListener("click", clickModalWhenClickOuter);
+    document.addEventListener("click", closeModalWhenClickOuter);
     return () => {
-      document.removeEventListener("click", clickModalWhenClickOuter);
+      document.removeEventListener("click", closeModalWhenClickOuter);
       // setState({});
       // setError(false);
       // setSuccess(false);
@@ -29,7 +28,7 @@ const ModalComponent = ({ isOpen, togglemodal }) => {
   }, []);
 
   return (
-    <Modal ariaHideApp={false} ref={modalRef} id="modal" isOpen={isOpen}>
+    <Modal ariaHideApp={false} id="modal" isOpen={isOpen}>
       <div className="close-btn">
         <img
           role="presentation"
