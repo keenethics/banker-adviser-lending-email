@@ -7,16 +7,59 @@ import GetListForm from "./get-list-form";
 
 
 jest.mock("axios");
+jest.useFakeTimers();
 
 describe("tets Get list form component", () => {
-  it("should hide spinner after success fetch", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it("should hide success message after 5 seconde", async () => {
+    axios.post.mockImplementation(() => Promise.resolve());
     const wrapper = mount(<GetListForm btnClass="blue" />);
-    const promise = Promise.resolve("hi");
-    axios.post = jest.fn(() => promise);
+    wrapper.find("input").simulate("change", { target: { value: "email@email.com" } });
+    expect(wrapper.find("input").prop("value")).toBe("email@email.com");
+    wrapper.find("button").simulate("submit", { preventDefault() { } });
+
+    await axios.post();
+    jest.runAllTimers();
+    wrapper.update();
+
+    expect(wrapper.containsMatchingElement(
+      <button type="submit">GET THE LIST</button>
+    )).toBe(true);
+  });
+  it("should hide spinner after success fetch", async () => {
+    axios.post.mockImplementation(() => Promise.resolve());
+    const wrapper = mount(<GetListForm btnClass="blue" />);
     wrapper.find("input").simulate("change", { target: { value: "email@email.com" } });
     expect(wrapper.find("input").prop("value")).toBe("email@email.com");
     wrapper.find("button").simulate("submit", { preventDefault() { } });
     expect(wrapper.find(Spinner)).toHaveLength(1);
+
+    await axios.post();
+    wrapper.update();
+    expect(axios.post).toHaveBeenCalledTimes(2);
+    expect(wrapper.find(Spinner)).toHaveLength(0);
+  });
+
+  it("should show success message after success fetch", async () => {
+    axios.post.mockImplementation(() => Promise.resolve());
+    const wrapper = mount(<GetListForm btnClass="blue" />);
+    wrapper.find("input").simulate("change", { target: { value: "email@email.com" } });
+    expect(wrapper.find("input").prop("value")).toBe("email@email.com");
+    wrapper.find("button").simulate("submit", { preventDefault() { } });
+    await axios.post();
+    wrapper.update();
+    expect(axios.post).toHaveBeenCalledTimes(2);
+    expect(wrapper.find("button").containsMatchingElement(
+      <img alt="success logo" />
+    )).toBeTruthy();
+    expect(wrapper.containsMatchingElement(
+      <p className="input-message">
+        Success! Check your email for access to 1000 investment bankers in NYC.
+      </p>
+    )).toBeTruthy();
   });
 
   it("change input value", () => {

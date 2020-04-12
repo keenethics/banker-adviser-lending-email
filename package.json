@@ -43,7 +43,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint --ext .jsx --ext .js ./src"
+      "pre-commit": "eslint --ext .jsx --ext .js ./src",
+      "pre-push": "npm test"
     }
   },
   "proxy": "http://localhost:3333",
