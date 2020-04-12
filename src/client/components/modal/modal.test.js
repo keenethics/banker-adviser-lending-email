@@ -14,7 +14,7 @@ const MountModal = ({ open }) => {
 describe("Modal component", () => {
   it("should be hidden if props isOpen = false", () => {
     const wrapper = mount(<MountModal open={false} />);
-    expect(wrapper.find("header")).toHaveLength(1);
+    expect(wrapper.find("header")).toHaveLength(0);
   });
 
   it("should be open if props isOpen = true", () => {
