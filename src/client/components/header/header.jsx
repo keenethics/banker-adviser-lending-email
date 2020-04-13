@@ -25,7 +25,6 @@ const Header = ({ togglemodal }) => {
           <header>
             <h1>
               BankerAdvisor —
-              {" "}
               <br />
               Your Financial Insider
             </h1>
