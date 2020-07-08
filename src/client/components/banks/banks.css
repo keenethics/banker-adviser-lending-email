@@ -1,4 +1,4 @@
-.banks-wrap h3 {
+.what-does-bankeradvisor-offer-header {
   text-align: center;
   font-weight: bold;
   font-size: 44px;
@@ -37,56 +37,42 @@
   margin-bottom: 12px;
 }
 
-.bank-name h4 {
+.bank-name-header {
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
   color: #081e31;
 }
 
-.bank-name div {
+.bank-name-website-link-wrapp {
   background: #0039a6;
   border-radius: 2px;
   padding: 3px 7px;
   height: min-content;
 }
 
-.bank-name a {
+.bank-name-website-link {
   font-size: 18px;
   line-height: 22px;
   text-decoration: none;
   color: #ffffff;
 }
 
-.bank-industry div {
+.bank-industry {
   display: flex;
   margin-bottom: 12px;
   justify-content: space-between;
 }
 
-.bank-industry div > p {
+.bank-industry .bank-industry-services,
+.bank-industry .bank-industry-employees {
   font-size: 18px;
   line-height: 22px;
   color: #0039a6;
 }
 
-.bank-industry div > p:first-child {
+.bank-industry .bank-industry-services {
   padding-right: 15px;
-}
-
-.bank-industry p {
-  font-size: 16px;
-  line-height: 19px;
-  color: #081e31;
-  max-width: 520px;
-}
-
-.bank-industry p small {
-  color: #0039a6;
-  font-size: 14px;
-  line-height: 17px;
-  cursor: pointer;
-  margin-left: 10px;
 }
 
 .border-bottom {
@@ -105,7 +91,14 @@
   justify-content: space-between;
 }
 
-.connect-person-item .connect-name-email p:first-child {
+.connect-name-email-wrapp {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connect-person-name {
   font-weight: bold;
   font-size: 18px;
   padding-right: 10px;
@@ -113,7 +106,7 @@
   line-height: 22px;
   color: #081e31;
 }
-.connect-person-item .connect-name-email a {
+.connect-person-email {
   font-size: 18px;
   line-height: 22px;
   text-decoration-line: underline;
@@ -121,23 +114,27 @@
   color: #081e31;
 }
 
-.connect-name-email {
-  display: flex;
-  width: 75%;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.connect-person-item > a {
+.connect-person-link {
+  font-family: Lato;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  text-decoration: none;
   color: #0039a6;
 }
 
-.mobile-title h3 {
+.connect-person-link:hover {
+  text-decoration: underline;
+}
+
+.mobile-title {
   display: none;
 }
 
@@ -161,17 +158,15 @@
     justify-content: space-between;
   }
 
-  .connect-name-email {
+  .connect-name-email-wrapp {
     display: flex;
     flex-direction: column;
     width: auto;
     align-items: flex-start;
     justify-content: space-between;
   }
-  .bank-industry p small {
-    margin-left: 10px;
-  }
-  .bank-logo img {
+
+  .bank-logo-img {
     width: 165px;
     height: 165px;
   }
@@ -186,7 +181,7 @@
     padding: 0 13px;
   }
 
-  .mobile-title h3 {
+  .mobile-title {
     display: block;
   }
 
@@ -195,7 +190,7 @@
     margin-bottom: 85px;
   }
 
-  #banks-section h3 {
+  .what-does-bankeradvisor-offer-mobile {
     font-weight: bold;
     font-size: 40px;
     margin: 80px 0 30px 0;
@@ -213,27 +208,27 @@
     border: 2px solid #dce4f6;
   }
 
+  .mobile-logo-img {
+    width: 90px;
+    height: 90px;
+  }
+
   .mobile-bank-header {
     display: flex;
     justify-content: space-between;
   }
 
-  .mobile-link {
+  .mobile-link-wrapp {
     background: #0039a6;
     height: max-content;
     border-radius: 2px;
     padding: 5px 10px;
   }
-  .mobile-link a {
+  .mobile-link {
     font-size: 18px;
     line-height: 22px;
     text-decoration: none;
     color: #ffffff;
-  }
-
-  .mobile-bank-header img {
-    width: 90px;
-    height: 90px;
   }
 
   .mobile-title {
@@ -254,14 +249,13 @@
     margin-bottom: 20px;
   }
 
-  .mobile-industry > p:first-child {
-    padding-right: 35px;
+  .mobile-industry-services {
+    padding-right: 30px;
+    flex-basis: 100%;
   }
 
-  .mobile-text {
-    font-size: 16px;
-    line-height: 19px;
-    color: #081e31;
+  .mobile-industry-employees {
+    text-align: center;
   }
 
   #banks-section small {
@@ -288,15 +282,15 @@
     margin-bottom: 5px;
   }
 
-  .connect-mail .connect-name h5 {
+  .connect-name-header {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    padding-right: 5px;
+    padding-right: 10px;
     color: #081e31;
   }
 
-  .connect-mail .connect-name a {
+  .connect-name-email-link {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
@@ -306,7 +300,7 @@
     color: #0039a6;
   }
 
-  .connect-mail a {
+  .connect-name-emali {
     font-size: 16px;
     line-height: 19px;
     text-decoration-line: underline;

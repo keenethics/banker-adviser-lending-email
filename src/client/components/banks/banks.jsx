@@ -19,28 +19,32 @@ const Banks = () => {
   return (
     <section id="banks-section">
       <div className="mobile-title">
-        <h3>What Does BankerAdvisor Offer?</h3>
+        <h3 className="what-does-bankeradvisor-offer-mobile">
+          What Does BankerAdvisor Offer?
+        </h3>
       </div>
       <div className="mobile-bank-wrap">
         <Slider {...settings}>
           <div className="mobile-bank">
             <div className="mobile-bank-header">
               <div className="mobile-logo">
-                <img src={logo1} alt="" />
+                <img className="mobile-logo-img" src={logo1} alt="" />
               </div>
-              <div className="mobile-link">
-                <a href="https://www.blackstone.com/">blackstone.com</a>
+              <div className="mobile-link-wrapp">
+                <a className="mobile-link" href="https://www.blackstone.com/">
+                  blackstone.com
+                </a>
               </div>
             </div>
             <div className="mobile-title">
               <h4>Blackstone</h4>
             </div>
             <div className="mobile-industry">
-              <p>
+              <p className="mobile-industry-services">
                 Private Equity, Real Estate Infrastructure, Innovations, Life
                 Sciences
               </p>
-              <p>1,000-5,000 employees</p>
+              <p className="mobile-industry-employees">1,000-5,000 employees</p>
             </div>
             <div className="mobile-text">
               <ReadMoreText
@@ -61,23 +65,47 @@ const Banks = () => {
 
             <div className="connect-mail">
               <div className="connect-name">
-                <h5>Alexandra Hill, Sr. Managing Director</h5>
-                <a href="mailto:alexandra.hill@blackstone.com">connect</a>
+                <h5 className="connect-name-header">
+                  Alexandra Hill, Sr. Managing Director
+                </h5>
+                <a
+                  className="connect-name-email-link"
+                  href="mailto:alexandra.hill@blackstone.com"
+                >
+                  connect
+                </a>
               </div>
-              <a href="mailto:alexandra.hill@blackstone.com">alexandra.hill@blackstone.com</a>
+              <a
+                className="connect-name-emali"
+                href="mailto:alexandra.hill@blackstone.com"
+              >
+                alexandra.hill@blackstone.com
+              </a>
             </div>
             <div className="connect-mail">
               <div className="connect-name">
-                <h5>Eli Nagler, Managing Director</h5>
-                <a href="mailto:eli.nagler@blackstone.com">connect</a>
+                <h5 className="connect-name-header">
+                  Eli Nagler, Managing Director
+                </h5>
+                <a
+                  className="connect-name-email-link"
+                  href="mailto:eli.nagler@blackstone.com"
+                >
+                  connect
+                </a>
               </div>
-              <a href="mailto:eli.nagler@blackstone.com">eli.nagler@blackstone.com</a>
+              <a
+                className="connect-name-email"
+                href="mailto:eli.nagler@blackstone.com"
+              >
+                eli.nagler@blackstone.com
+              </a>
             </div>
           </div>
           <div className="mobile-bank">
             <div className="mobile-bank-header">
               <div className="mobile-logo">
-                <img src={logo2} alt="" />
+                <img className="mobile-logo-img" src={logo2} alt="" />
               </div>
               <div className="mobile-link">
                 <a href="http://palazzonyc.com/">palazzonyc.com</a>
@@ -87,11 +115,11 @@ const Banks = () => {
               <h4>Palazzo</h4>
             </div>
             <div className="mobile-industry">
-              <p>
+              <p className="mobile-industry-services">
                 Marketing, Media, Tech Infrastructure, Innovations, Life
                 Sciences
               </p>
-              <p>11-50 employees</p>
+              <p className="mobile-industry-employees">11-50 employees</p>
             </div>
             <div className="mobile-text">
               <ReadMoreText
@@ -112,34 +140,64 @@ const Banks = () => {
 
             <div className="connect-mail">
               <div className="connect-name">
-                <h5>Peter Cosco, Managing Director</h5>
-                <a href="mailto:pcosco@palazzonyc.com">connect</a>
+                <h5 className="connect-name-header">
+                  Peter Cosco, Managing Director
+                </h5>
+                <a
+                  className="connect-name-email-link"
+                  href="mailto:pcosco@palazzonyc.com"
+                >
+                  connect
+                </a>
               </div>
-              <a href="mailto:pcosco@palazzonyc.com">pcosco@palazzonyc.com</a>
+              <a
+                className="connect-name-email"
+                href="mailto:pcosco@palazzonyc.com"
+              >
+                pcosco@palazzonyc.com
+              </a>
             </div>
             <div className="connect-mail">
               <div className="connect-name">
-                <h5>Matt Hasson, Managing Director </h5>
-                <a href="mailto:mhasson@palazzonyc.com">connect</a>
+                <h5 className="connect-name-header">
+                  Matt Hasson, Managing Director
+                  {" "}
+                </h5>
+                <a
+                  className="connect-name-email-link"
+                  href="mailto:mhasson@palazzonyc.com"
+                >
+                  connect
+                </a>
               </div>
-              <a href="mailto:mhasson@palazzonyc.com">mhasson@palazzonyc.com</a>
+              <a
+                className="connect-name-email"
+                href="mailto:mhasson@palazzonyc.com"
+              >
+                mhasson@palazzonyc.com
+              </a>
             </div>
           </div>
           <div className="mobile-bank">
             <div className="mobile-bank-header">
               <div className="mobile-logo">
-                <img src={logo3} alt="" />
+                <img className="mobile-logo-img" src={logo3} alt="" />
               </div>
-              <div className="mobile-link">
-                <a href="https://www.jpmorganchase.com/">jpmorganchase.com</a>
+              <div className="mobile-link-wrapp">
+                <a
+                  className="mobile-link"
+                  href="https://www.jpmorganchase.com/"
+                >
+                  jpmorganchase.com
+                </a>
               </div>
             </div>
             <div className="mobile-title">
               <h4>JPMorgan Chase & Co.</h4>
             </div>
             <div className="mobile-industry">
-              <p>Financial Services</p>
-              <p>10,000+ employees</p>
+              <p className="mobile-industry-services">Financial Services</p>
+              <p className="mobile-industry-employees">10,000+ employees</p>
             </div>
             <div className="mobile-text">
               <ReadMoreText
@@ -158,17 +216,42 @@ const Banks = () => {
 
             <div className="connect-mail">
               <div className="connect-name">
-                <h5>David Disi, Chief Investment Officer</h5>
-                <a href="mailto:david@jpmorgan.com">connect</a>
+                <h5 className="connect-name-header">
+                  David Disi, Chief Investment Officer
+                </h5>
+                <a
+                  className="connect-name-email-link"
+                  href="mailto:david@jpmorgan.com"
+                >
+                  connect
+                </a>
               </div>
-              <a href="mailto:david@jpmorgan.com">david@jpmorgan.com </a>
+              <a
+                className="connect-name-email"
+                href="mailto:david@jpmorgan.com"
+              >
+                david@jpmorgan.com
+                {" "}
+              </a>
             </div>
             <div className="connect-mail">
               <div className="connect-name">
-                <h5>Andrea Stefanucci, Executive Director</h5>
-                <a href="mailto:astefanucci@jpmorgan.com">connect</a>
+                <h5 className="connect-name-header">
+                  Andrea Stefanucci, Executive Director
+                </h5>
+                <a
+                  className="connect-name-email-link"
+                  href="mailto:astefanucci@jpmorgan.com"
+                >
+                  connect
+                </a>
               </div>
-              <a href="mailto:astefanucci@jpmorgan.com">astefanucci@jpmorgan.com</a>
+              <a
+                className="connect-name-email"
+                href="mailto:astefanucci@jpmorgan.com"
+              >
+                astefanucci@jpmorgan.com
+              </a>
             </div>
           </div>
         </Slider>
@@ -176,25 +259,34 @@ const Banks = () => {
 
       <div className="banks">
         <div className="banks-wrap">
-          <h3>What Does BankerAdvisor Offer?</h3>
+          <h3 className="what-does-bankeradvisor-offer-header">
+            What Does BankerAdvisor Offer?
+          </h3>
           <div className="bank">
             <div className="bank-logo">
-              <img src={logo1} alt="bank logo" />
+              <img className="bank-logo-img" src={logo1} alt="bank logo" />
             </div>
             <div className="bank-description">
               <div className="bank-name">
-                <h4>Blackstone</h4>
-                <div>
-                  <a href="https://www.blackstone.com/">blackstone.com</a>
+                <h4 className="bank-name-header">Blackstone</h4>
+                <div className="bank-name-website-link-wrapp">
+                  <a
+                    className="bank-name-website-link"
+                    href="https://www.blackstone.com/"
+                  >
+                    blackstone.com
+                  </a>
                 </div>
               </div>
-              <div className="bank-industry">
-                <div>
-                  <p>
+              <div className="bank-industry-wrapp">
+                <div className="bank-industry">
+                  <p className="bank-industry-services">
                     Private Equity, Real Estate Infrastructure, Innovations,
                     Life Sciences
                   </p>
-                  <p>1,000-5,000 employees</p>
+                  <p className="bank-industry-employees">
+                    1,000-5,000 employees
+                  </p>
                 </div>
                 <ReadMoreText
                   text="Blackstone is one of the world’s leading investment firms.
@@ -211,40 +303,69 @@ const Banks = () => {
               <div className="border-bottom" />
               <div className="connect-person">
                 <div className="connect-person-item">
-                  <div className="connect-name-email">
-                    <p>Alexandra Hill, Sr. Managing Director</p>
-                    <a href="mailto:alexandra.hill@blackstone.com">alexandra.hill@blackstone.com</a>
+                  <div className="connect-name-email-wrapp">
+                    <p className="connect-person-name">
+                      Alexandra Hill, Sr. Managing Director
+                    </p>
+                    <a
+                      className="connect-person-email"
+                      href="mailto:alexandra.hill@blackstone.com"
+                    >
+                      alexandra.hill@blackstone.com
+                    </a>
                   </div>
-                  <a href="mailto:alexandra.hill@blackstone.com">connect</a>
+                  <a
+                    className="connect-person-link"
+                    href="mailto:alexandra.hill@blackstone.com"
+                  >
+                    connect
+                  </a>
                 </div>
                 <div className="connect-person-item">
-                  <div className="connect-name-email">
-                    <p>Eli Nagler, Managing Director</p>
-                    <a href="mailto:eli.nagler@blackstone.com">eli.nagler@blackstone.com</a>
+                  <div className="connect-name-email-wrapp">
+                    <p className="connect-person-name">
+                      Eli Nagler, Managing Director
+                    </p>
+                    <a
+                      className="connect-person-email"
+                      href="mailto:eli.nagler@blackstone.com"
+                    >
+                      eli.nagler@blackstone.com
+                    </a>
                   </div>
-                  <a href="mailto:eli.nagler@blackstone.com">connect</a>
+                  <a
+                    className="connect-person-link"
+                    href="mailto:eli.nagler@blackstone.com"
+                  >
+                    connect
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           <div className="bank">
             <div className="bank-logo">
-              <img src={logo2} alt="bank logo" />
+              <img className="bank-logo-img" src={logo2} alt="bank logo" />
             </div>
             <div className="bank-description">
               <div className="bank-name">
-                <h4>Palazzo</h4>
-                <div>
-                  <a href="https://www.palazzonyc.com/">palazzonyc.com</a>
+                <h4 className="bank-name-header">Palazzo</h4>
+                <div className="bank-name-website-link-wrapp">
+                  <a
+                    className="bank-name-website-link"
+                    href="https://www.palazzonyc.com/"
+                  >
+                    palazzonyc.com
+                  </a>
                 </div>
               </div>
-              <div className="bank-industry">
-                <div>
-                  <p>
+              <div className="bank-industry-wrapp">
+                <div className="bank-industry">
+                  <p className="bank-industry-services">
                     Marketing, Media, Tech Infrastructure, Innovations, Life
                     Sciences
                   </p>
-                  <p>11-50 employees</p>
+                  <p className="bank-industry-employees">11-50 employees</p>
                 </div>
                 <ReadMoreText
                   text="PALAZZO is a New York City based investment bank that provides M&A advisory
@@ -261,37 +382,66 @@ const Banks = () => {
               <div className="border-bottom" />
               <div className="connect-person">
                 <div className="connect-person-item">
-                  <div className="connect-name-email">
-                    <p>Peter Cosco, Managing Director</p>
-                    <a href="mailto:pcosco@palazzonyc.com">pcosco@palazzonyc.com</a>
+                  <div className="connect-name-email-wrapp">
+                    <p className="connect-person-name">
+                      Peter Cosco, Managing Director
+                    </p>
+                    <a
+                      className="connect-person-email"
+                      href="mailto:pcosco@palazzonyc.com"
+                    >
+                      pcosco@palazzonyc.com
+                    </a>
                   </div>
-                  <a href="mailto:pcosco@palazzonyc.com">connect</a>
+                  <a
+                    className="connect-person-link"
+                    href="mailto:pcosco@palazzonyc.com"
+                  >
+                    connect
+                  </a>
                 </div>
                 <div className="connect-person-item">
-                  <div className="connect-name-email">
-                    <p>Matt Hasson, Managing Director</p>
-                    <a href="mailto:mhasson@palazzonyc.com">mhasson@palazzonyc.com</a>
+                  <div className="connect-name-email-wrapp">
+                    <p className="connect-person-name">
+                      Matt Hasson, Managing Director
+                    </p>
+                    <a
+                      className="connect-person-email"
+                      href="mailto:mhasson@palazzonyc.com"
+                    >
+                      mhasson@palazzonyc.com
+                    </a>
                   </div>
-                  <a href="mailto:mhasson@palazzonyc.com">connect</a>
+                  <a
+                    className="connect-person-link"
+                    href="mailto:mhasson@palazzonyc.com"
+                  >
+                    connect
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           <div className="bank">
             <div className="bank-logo">
-              <img src={logo3} alt="bank logo" />
+              <img className="bank-logo-img" src={logo3} alt="bank logo" />
             </div>
             <div className="bank-description">
               <div className="bank-name">
-                <h4>JPMorgan Chase & Co.</h4>
-                <div>
-                  <a href="https://www.jpmorganchase.com/">jpmorganchase.com</a>
+                <h4 className="bank-name-header">JPMorgan Chase & Co.</h4>
+                <div className="bank-name-website-link-wrapp">
+                  <a
+                    className="bank-name-website-link"
+                    href="https://www.jpmorganchase.com/"
+                  >
+                    jpmorganchase.com
+                  </a>
                 </div>
               </div>
-              <div className="bank-industry">
-                <div>
-                  <p>Financial Services </p>
-                  <p>10,000+ employees</p>
+              <div className="bank-industry-wrapp">
+                <div className="bank-industry">
+                  <p className="bank-industry-services">Financial Services </p>
+                  <p className="bank-industry-employees">10,000+ employees</p>
                 </div>
                 <ReadMoreText
                   text="For over 200 years, JPMorgan Chase & Co. has provided innovative financial
@@ -306,18 +456,42 @@ const Banks = () => {
               <div className="border-bottom" />
               <div className="connect-person">
                 <div className="connect-person-item">
-                  <div className="connect-name-email">
-                    <p>David Disi, Chief Investment Officer</p>
-                    <a href="mailto:david@jpmorgan.com">david@jpmorgan.com</a>
+                  <div className="connect-name-email-wrapp">
+                    <p className="connect-person-name">
+                      David Disi, Chief Investment Officer
+                    </p>
+                    <a
+                      className="connect-person-email"
+                      href="mailto:david@jpmorgan.com"
+                    >
+                      david@jpmorgan.com
+                    </a>
                   </div>
-                  <a href="mailto:david@jpmorgan.com">connect</a>
+                  <a
+                    className="connect-person-link"
+                    href="mailto:david@jpmorgan.com"
+                  >
+                    connect
+                  </a>
                 </div>
                 <div className="connect-person-item">
-                  <div className="connect-name-email">
-                    <p>Andrea Stefanucci, Executive Director</p>
-                    <a href="mailto:astefanucci@jpmorgan.com">astefanucci@jpmorgan.com</a>
+                  <div className="connect-name-email-wrapp">
+                    <p className="connect-person-name">
+                      Andrea Stefanucci, Executive Director
+                    </p>
+                    <a
+                      className="connect-person-email"
+                      href="mailto:astefanucci@jpmorgan.com"
+                    >
+                      astefanucci@jpmorgan.com
+                    </a>
                   </div>
-                  <a href="mailto:astefanucci@jpmorgan.com">connect</a>
+                  <a
+                    className="connect-person-link"
+                    href="mailto:astefanucci@jpmorgan.com"
+                  >
+                    connect
+                  </a>
                 </div>
               </div>
             </div>
