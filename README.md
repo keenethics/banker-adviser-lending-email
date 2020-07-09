@@ -33,6 +33,6 @@ the app was deployed in heroku, you need to create heroku account if you don't h
 https://github.com/paypal/Checkout-NodeJS-SDK or more information <br/>
 https://developer.paypal.com/docs/checkout/integrate/#5-capture-the-transaction
 https://developer.paypal.com/docs/checkout/integrate/#1-set-up-your-development-environment
-# You also need login to the payPal dashBoard and get the payPal client_id and  secret code, watch env.local
+#### You also need login to the payPal dashBoard and get the payPal client_id and  secret code, watch env.local
 
 ###
