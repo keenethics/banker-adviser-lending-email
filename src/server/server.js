@@ -1,20 +1,19 @@
 const express = require("express");
-const payPal = require("paypal-rest-sdk");
 
 const app = express();
 const path = require("path");
 const routes = require("./routes");
+
+require("dotenv").config();
+
 require("./utils/nodemailer-transport");
+require("./utils/pay-payl-configure");
+require("./utils/sentry-init");
 
 const PORT = process.env.PORT || 3333;
 
 app.listen(PORT, () => console.log(`========= SERVER IS RUNNING AT ${PORT}`));
 
-payPal.configure({
-  mode: "sandbox", // sandbox or live
-  client_id: "AbZWmbrDBXehpEh-uiYqjsOOUW7tGgbiB1xIhN6J6xGnpTr7J6_n2egBJPl-CXrO9AYz6x3BPjts2TdN",
-  client_secret: "EHFg5QqoESFsfEk-ciFrfwE6enVD8y9pj3bZ_q3l5tjKrP2qwy3yJsHEZ6BNvm3FGEDi7xAQU6Pz5gHe",
-});
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "./../../build")));

@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
 const express = require("express");
 const payPal = require("paypal-rest-sdk");
+const Sentry = require("@sentry/node");
 const transporter = require("../utils/nodemailer-transport");
 
 const router = express.Router();
 
-module.exports = function () {
-  router.get("/success", (req, res) => {
+module.exports = function payPalSuccessRoute() {
+  router.get("/", (req, res) => {
     const { PayerID, paymentId } = req.query;
 
     const executePaymentJson = {
@@ -21,7 +22,7 @@ module.exports = function () {
 
     payPal.payment.execute(paymentId, executePaymentJson, (error, payment) => {
       if (error) {
-        console.log(error.response);
+        Sentry.captureException(error);
         throw error;
       } else {
         const mail = {
@@ -39,7 +40,7 @@ module.exports = function () {
         };
         transporter.sendMail(mail, (err, data) => {
           if (err) {
-            console.log({ ...err });
+            Sentry.captureException(error);
           }
         });
         res.status(200).json({ url: "https://res.cloudinary.com/dnpawq0kt/raw/upload/v1585126347/Feedback_on_6_December_2019_bj9lxb.docx" });

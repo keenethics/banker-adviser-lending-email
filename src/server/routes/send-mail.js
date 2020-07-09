@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 const transporter = require("../utils/nodemailer-transport");
 
-module.exports = function () {
+module.exports = function sendEmailRoute() {
   router.post("/send-email", (req, res) => {
     const mail = {
       from: "Mike Casey <mike.casey@techcxo.com>",

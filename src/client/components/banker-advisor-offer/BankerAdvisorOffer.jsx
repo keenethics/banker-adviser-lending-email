@@ -34,7 +34,7 @@ const BanderAdvisorOffer = () => (
     <h3 className="banker-offer-title">What Does BankerAdvisor Offer?</h3>
     <div className="offers">
       {bankerOfferItem.map(({ bankTitle, text, logo }) => (
-        <div className="offer-item">
+        <div key={bankTitle} className="offer-item">
           <div className="offer-item-logo">
             <img src={logo} alt="ofer item logo" />
           </div>
