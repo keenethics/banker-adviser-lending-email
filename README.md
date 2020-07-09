@@ -39,7 +39,7 @@ https://developer.paypal.com/docs/checkout/integrate/#1-set-up-your-development-
 
 https://nodemailer.com/about/ sroll to example section <br/>
 
-for start use nodemailer you need gmail accaunt, you can use any, also watch the loca.env
+for start use nodemailer you need gmail accaunt, you can use any, also watch the env.local
 
 troubleshoot with nodemailer <br/>
 https://myaccount.google.com/lesssecureapps <br/>
