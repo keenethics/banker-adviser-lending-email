@@ -43,7 +43,9 @@
       "last 1 safari version"
     ]
   },
-  "husky": {},
+  "husky": {
+    "pre-commit": "npm run lint"
+  },
   "proxy": "http://localhost:3333",
   "devDependencies": {
     "@types/jest": "^25.2.1",
